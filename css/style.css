@@ -1,3 +1,13 @@
+:root{
+  --primary-color: #8e9775;
+  --text-color: #dddddd;
+}
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  
+}
 .center{
     position: absolute;
   top: 50%;
@@ -16,4 +26,24 @@
 }
 h1{
     color:azure;
+}
+.groot{
+  max-width: 45%;
+  max-height: 45%;
+  float: right;
+  position: relative;
+  right: 20%;
+  bottom: 60%;
+}
+.container{
+background-color: var(--primary-color);
+height: 40vh;
+margin-top: 0;
+padding: 15px 20px;
+}
+h2{
+  text-align: center;
+  max-width: 50%;
+  padding: 40px 10px;
+  color: var(--text-color);
 }
