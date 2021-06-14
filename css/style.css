@@ -52,10 +52,13 @@ h2{
   padding-top: 20px;
   margin-left: 155px ;
 }
-.btn-translate{
+#btn-translate{
 
   background-color: var(--primary-color);
+  color: white;
+  border: 1px solid #8e9775;
 }
+
 #output{
   border: 2px solid black;
   height: 13vh;

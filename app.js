@@ -4,26 +4,22 @@ var outputDiv = document.querySelector("#output");
 
 var serverURL = "https://api.funtranslations.com/translate/groot.json"
 
-function getTranslationURL(text){
+function getURL(text){
     return serverURL + "?" + "text=" + text
 }
 function errorHandler(error){
-    console.log("error occured", error);
-    alert("something is broken! Try again in sometime")
+    console.log("Some error occured");
+    alert("Try again Later!");
 }
-
-function clickHandler(){
-    //  output.innerText = "banana" + textInput.value
-    var inputText = textInput.value;
-
-    fetch(getTranslationURL(inputText))
-       .then(response => response.json())
-       .then(json =>{
-           var translatedtext = json.contents.translated;
-           outputDiv.innerText = translatedtext;
-       })
-   .catch(errorHandler)
+function clickHandler()
+{
+var inputText = textInput.value;
+fetch(getURL(inputText))
+.then(response => response.json())
+.then(json =>{
+    var translatedText = json.contents.translated;
+    outputDiv.innerText = translatedText;
+})
+.catch(errorHandler)
 };
-
-
 btnTranslate.addEventListener("click", clickHandler)
