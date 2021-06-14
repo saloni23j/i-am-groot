@@ -6,6 +6,7 @@ body{
   margin: 0;
   padding: 0;
   border: 0;
+  text-align: center;
   
 }
 .center{
@@ -35,7 +36,7 @@ h1{
   right: 20%;
   bottom: 60%;
 }
-.container{
+.head{
 background-color: var(--primary-color);
 height: 40vh;
 margin-top: 0;
@@ -46,4 +47,18 @@ h2{
   max-width: 50%;
   padding: 40px 10px;
   color: var(--text-color);
+}
+.txt-area{
+  padding-top: 20px;
+  margin-left: 155px ;
+}
+.btn-translate{
+
+  background-color: var(--primary-color);
+}
+#output{
+  border: 2px solid black;
+  height: 13vh;
+  width: 450px;
+ margin:auto ;
 }
